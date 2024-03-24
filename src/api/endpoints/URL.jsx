@@ -1,2 +1,2 @@
-const URL = "https://dogsapi.origamid.dev/json";
+const URL = "http://dogsapi.test/json";
 export default URL;
