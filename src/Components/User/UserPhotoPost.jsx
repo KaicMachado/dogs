@@ -20,13 +20,14 @@ const UserPhotoPost = () => {
  useEffect(() => {
   if (data) navigate("./conta");
  }, [data, navigate]);
+
  function handleSubmit(e) {
   e.preventDefault();
   const formData = new FormData();
   formData.append("img", img.raw);
-  formData.append("nome", nome.raw);
-  formData.append("peso", peso.raw);
-  formData.append("idade", idade.raw);
+  formData.append("nome", nome.value);
+  formData.append("peso", peso.value);
+  formData.append("idade", idade.value);
 
   const token = window.localStorage.getItem("token");
   const { url, options } = PHOTO_POST(formData, token);
