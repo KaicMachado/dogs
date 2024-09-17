@@ -18,7 +18,7 @@ const UserPhotoPost = () => {
  const navigate = useNavigate();
 
  useEffect(() => {
-  if (data) navigate("./conta");
+  if (data) navigate("../");
  }, [data, navigate]);
 
  function handleSubmit(e) {
